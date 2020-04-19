@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Form Validation</title>
+    <script src="valid_js.js"></script>
+</head>
+<body>
+    <h1> Fill Your Details</h1>
+    <div class="container">
+     <form onsubmit="return validate()" method="post" action="message.html">
+        <span class="name">User Name: </span>
+      <input type="text" id="uname" placeholder="enter your username" />
+      <p id="dis1" style="display: none;color:red ;">Invalid User</p>
+         <br><br>
+         <span class="password" >User Password :</span>
+        <input type="password" id="upass" placeholder="enter your password"/>
+        <p id="dis2"  style="display: none;color:red ;"> Password is required of length more than 8</p> 
+        <br><br>
+          <button type="submit" class="b1">Submit</button>
+          <button type="reset" class="b2">Reset</button>
+     </form>
+    </div>
+
+</body>
+</html>
